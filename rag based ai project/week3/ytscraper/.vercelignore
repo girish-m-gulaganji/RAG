@@ -1,0 +1,12 @@
+.venv
+__pycache__
+*.pyc
+.env
+.env.local
+.git
+audio/
+langtest/
+*.m4a
+*.wav
+*.mp3
+uv.lock
