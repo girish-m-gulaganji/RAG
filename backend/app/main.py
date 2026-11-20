@@ -64,7 +64,7 @@ def root():
     <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <title>LearnTube AI — Backend API</title>
+      <title>Padho with Girish AI — Backend API</title>
       <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0b0d11; color: #e2e8f0; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
         .card { background: #121620; border: 1px solid #232b3b; padding: 40px; border-radius: 20px; text-align: center; max-width: 480px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
@@ -82,8 +82,8 @@ def root():
     <body>
       <div class="card">
         <div class="badge"><span style="width:8px;height:8px;border-radius:50%;background:#34d399;display:inline-block;"></span> Backend API Online</div>
-        <h1>LearnTube AI</h1>
-        <p>Your production RAG engine is active and serving vectors, transcripts, and grounded AI tutor sessions.</p>
+        <h1>Padho with Girish AI</h1>
+        <p>Production RAG engine created by Girish M. Gulaganji. Serving vectors, transcripts, and grounded AI tutor sessions.</p>
         <div class="btn-group">
           <a href="http://localhost:5173" class="btn btn-primary">Open Student Web App (Port 5173)</a>
           <a href="/docs" class="btn btn-secondary">Interactive Swagger Docs (/docs)</a>

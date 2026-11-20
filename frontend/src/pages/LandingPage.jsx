@@ -24,7 +24,7 @@ export const LandingPage = () => {
               <GraduationCap className="w-5 h-5" />
             </div>
             <span className="font-extrabold text-lg text-white tracking-tight flex items-center gap-1.5">
-              LearnTube <span className="text-xs px-2 py-0.5 rounded bg-brand-500/20 text-brand-400 font-bold uppercase">AI</span>
+              Padho with Girish <span className="text-xs px-2 py-0.5 rounded bg-brand-500/20 text-brand-400 font-bold uppercase">AI</span>
             </span>
           </div>
 
@@ -122,7 +122,7 @@ export const LandingPage = () => {
 
       {/* Footer */}
       <footer className="border-t border-[#1e2532] bg-[#0c0f17] py-8 text-center text-xs text-gray-500">
-        <p>© 2026 LearnTube AI. Production-Ready YouTube Lecture Assistant.</p>
+        <p>© 2026 Padho with Girish AI. Production-Ready YouTube Lecture Assistant by Girish M. Gulaganji.</p>
       </footer>
     </div>
   );

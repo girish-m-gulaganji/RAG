@@ -15,7 +15,7 @@ for env_path in [
 
 
 class Settings(BaseSettings):
-    APP_NAME: str = "AI YouTube Learning Assistant"
+    APP_NAME: str = "Padho with Girish AI"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api/v1"
 

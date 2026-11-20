@@ -1,4 +1,6 @@
-# 🎓 LearnTube AI — Production AI-Powered YouTube Learning Assistant
+# 🎓 Padho with Girish AI — Production AI-Powered YouTube Learning Assistant
+
+**Author & Developer:** [Girish M. Gulaganji](https://github.com/girish-m-gulaganji)
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev)
