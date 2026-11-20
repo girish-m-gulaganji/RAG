@@ -55,9 +55,40 @@ def health_check():
     }
 
 
-@app.get("/")
+from fastapi.responses import HTMLResponse
+
+@app.get("/", response_class=HTMLResponse)
 def root():
-    return {
-        "message": f"Welcome to {settings.APP_NAME} API. Visit /docs for Swagger documentation.",
-        "version": settings.VERSION,
-    }
+    return """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>LearnTube AI — Backend API</title>
+      <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0b0d11; color: #e2e8f0; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .card { background: #121620; border: 1px solid #232b3b; padding: 40px; border-radius: 20px; text-align: center; max-width: 480px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        .badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; background: rgba(16,185,129,0.15); color: #34d399; border: 1px solid rgba(16,185,129,0.3); margin-bottom: 16px; }
+        h1 { margin: 0 0 8px 0; font-size: 24px; color: #fff; }
+        p { color: #94a3b8; font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
+        .btn-group { display: flex; flex-direction: column; gap: 10px; }
+        .btn { display: block; padding: 12px 20px; border-radius: 12px; text-decoration: none; font-size: 14px; font-weight: 600; transition: all 0.2s; }
+        .btn-primary { background: #6366f1; color: #fff; box-shadow: 0 4px 14px rgba(99,102,241,0.4); }
+        .btn-primary:hover { background: #4f46e5; }
+        .btn-secondary { background: #1e2533; color: #cbd5e1; border: 1px solid #2b3548; }
+        .btn-secondary:hover { background: #283245; }
+      </style>
+    </head>
+    <body>
+      <div class="card">
+        <div class="badge"><span style="width:8px;height:8px;border-radius:50%;background:#34d399;display:inline-block;"></span> Backend API Online</div>
+        <h1>LearnTube AI</h1>
+        <p>Your production RAG engine is active and serving vectors, transcripts, and grounded AI tutor sessions.</p>
+        <div class="btn-group">
+          <a href="http://localhost:5173" class="btn btn-primary">Open Student Web App (Port 5173)</a>
+          <a href="/docs" class="btn btn-secondary">Interactive Swagger Docs (/docs)</a>
+        </div>
+      </div>
+    </body>
+    </html>
+    """
